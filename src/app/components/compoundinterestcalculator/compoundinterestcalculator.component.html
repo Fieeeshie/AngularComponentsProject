@@ -1,0 +1,19 @@
+<div class="compound-interest-calculator">
+  <h2>Compound Interest Calculator</h2>
+
+  <label for="principal">Principal:</label>
+  <input type="number" [(ngModel)]="principal" id="principal">
+
+  <label for="rate">Rate (%):</label>
+  <input type="number" [(ngModel)]="rate" id="rate">
+
+  <label for="time">Time (years):</label>
+  <input type="number" [(ngModel)]="time" id="time">
+
+  <label for="frequency">Compounding Frequency (times per year):</label>
+  <input type="number" [(ngModel)]="frequency" id="frequency">
+
+  <button (click)="calculateCompoundInterest()">Calculate Compound Interest</button>
+
+  <p *ngIf="compoundInterest">Compound Interest: {{ compoundInterest | currency }}</p>
+</div>

@@ -1,0 +1,7 @@
+<select [(ngModel)]="selectedLanguage">
+  <option value="English">English</option>
+  <option value="Spanish">Spanish</option>
+  <option value="French">French</option>
+</select>
+<button (click)="greetInSelectedLanguage()">Greet</button>
+<p>{{ greeting }}</p>
